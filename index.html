@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Éconis</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="menu_bar">
+    <img src="LOGO-04.png" class="logo" />
+    <div class="user_button">
+      <img src="user_logo.png" class="user_logo" />
+      <p class="user_text">área do usuário</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="carrossel">
+      <img src="carrosel/1.jpg" class="img_carrosel active" />
+      <img src="carrosel/2.jpg" class="img_carrosel" />
+      <img src="carrosel/3.jpg" class="img_carrosel" />
+    </div>
+    <div class="indicadores">
+      <div class="current at"></div>
+      <div class="current"></div>
+      <div class="current"></div>
+    </div>
+  </div>
+
+  <section class="sobre" data-aos="fade-up">
+    <img class="sobre-img" />
+    <div class="sobre-texto">
+      <h2>Sobre nós</h2>
+      <p>Somos a Éconis, uma rede de lojas que conecta qualidade, preço justo e compromisso com o cliente.</p>
+    </div>
+  </section>
+
+  <section class="blocos-institucionais">
+    <div class="bloco" data-aos="zoom-in">
+      <img  class="icone" />
+      <h3>Dúvidas ou Sugestões</h3>
+      <p>Entre em contato conosco diretamente pelo formulário.</p>
+    </div>
+    <div class="bloco" data-aos="zoom-in" data-aos-delay="200">
+      <img  class="icone" />
+      <h3>Solicite seu Crediário</h3>
+      <p>Facilidade de pagamento, sem burocracia.</p>
+    </div>
+    <div class="bloco" data-aos="zoom-in" data-aos-delay="400">
+      <img  class="icone" />
+      <h3>Faça Parte do Nosso Time</h3>
+      <p>Estamos contratando! Envie seu currículo online.</p>
+    </div>
+  </section>
+
+  <section class="lojas">
+    <h2 data-aos="fade-up">Nossas Lojas</h2>
+
+    <div class="estado-card" onclick="toggleCard(this)">
+      <h3>Alagoas</h3>
+      <div class="lojas-info">
+        <p>Maceió - Av. Brasil, 123</p>
+        <p>Arapiraca - R. Central, 45</p>
+      </div>
+    </div>
+
+    <div class="estado-card" onclick="toggleCard(this)">
+      <h3>Bahia</h3>
+      <div class="lojas-info">
+        <p>Salvador - Av. Oceânica, 2300</p>
+        <p>Feira de Santana - R. Getúlio Vargas, 99</p>
+      </div>
+    </div>
+
+    <div class="estado-card" onclick="toggleCard(this)">
+      <h3>Ceará</h3>
+      <div class="lojas-info">
+        <p>Fortaleza - Av. Beira Mar, 1000</p>
+        <p>Juazeiro do Norte - R. Padre Cícero, 222</p>
+      </div>
+    </div>
+
+    <div class="estado-card" onclick="toggleCard(this)">
+      <h3>Paraíba</h3>
+      <div class="lojas-info">
+        <p>João Pessoa - Av. Epitácio Pessoa, 345</p>
+        <p>Campina Grande - R. Floriano Peixoto, 567</p>
+      </div>
+    </div>
+
+    <div class="estado-card" onclick="toggleCard(this)">
+      <h3>Pernambuco</h3>
+      <div class="lojas-info">
+        <p>Recife - Av. Boa Viagem, 800</p>
+        <p>Caruaru - R. Dom Bosco, 321</p>
+      </div>
+    </div>
+  </section>
+
+  <p style="text-align: center; color: white;">Feito por : Hugo. Hugostoso</p>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function toggleCard(el) {
+      el.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
